@@ -37,7 +37,7 @@ const renderPokemonData = (pokemonsToRender) => {
 // this function -to fetch data from api
 const fetchPokemons = async () => {
  //fetch url and name
-  const response = await fetch(https://pokeapi.co/api/v2/pokemon?limit=20&offset=${offset});
+  const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=${offset}`);
   const data = await response.json();
 
   //for detailing of data,fetching details using api calls
